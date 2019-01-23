@@ -1,0 +1,30 @@
+.container-fluid{
+    margin-top: 2%;
+    background: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-message-end-game{
+    background: darkgray;
+    z-index: 1;
+    width: 50%;
+    height: 40%;        
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    animation: appear 1s forwards;
+    opacity: 0;
+}
+
+@keyframes appear{
+    to{
+        opacity: 1;
+    }
+}
+
+
+

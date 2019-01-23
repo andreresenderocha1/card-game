@@ -1,0 +1,22 @@
+<app-message-end-game *ngIf='flagEndGame'></app-message-end-game>
+
+<div class="container-fluid container-game">  
+  <div class="cards-container">
+    <app-card-item class="cards-display" *ngFor='let card of cards' [card]='card'></app-card-item> 
+  </div>
+  <div class="container buttons-container d-flex 
+              justify-content-center align-items-center">
+    <button 
+      class="btn btn-primary btn-lg mx-3" 
+      type="button" 
+      (click)='shuffleCards()'
+      [disabled]='flagDisableButton'
+      >Shuffle</button>
+    <button 
+      class="btn btn-primary btn-lg mx-3" 
+      type="button" 
+      (click)='getOneCard()'
+      [disabled]='flagDisableButton'
+      >Get One</button>
+  </div>
+</div>

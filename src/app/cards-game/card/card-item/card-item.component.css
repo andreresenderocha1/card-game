@@ -1,0 +1,22 @@
+
+img{
+    width: 131px;
+    height: 200px;   
+}
+.cardGeted{    
+    animation: 
+        moveCardUp 2s forwards,
+        disapear 0.5s 2s forwards;        
+}
+
+@keyframes moveCardUp{
+   to{
+       transform: translateY(-45%)
+   }
+}
+
+@keyframes disapear{
+    to{        
+        opacity: 0;
+    }
+}
